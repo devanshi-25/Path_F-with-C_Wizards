@@ -35,13 +35,13 @@
         <h2 class="header_title">Instructions</h2>
         <span id="hide_instructions">hide</span>
       </header>
-      Click within the <span class="white">white</span> grid and drag your mouse to draw obstacles. <br>
-      Drag the <span class="green">green</span> node to set the start position. <br>
-      Drag the <span class="red">red</span> node to set the end position. <br>
+      Click within the <span class="black">black</span> grid and drag your mouse to draw obstacles. <br>
+      Drag the <span class="yellow">yellow</span> node to set the start position. <br>
+      Drag the <span class="blue">blue</span> node to set the end position. <br>
       Choose an algorithm from the right-hand panel. <br>
       Click Start Search in the lower-right corner to start the animation.
     </div>
-
+    
     <div id="algorithm_panel" class="panel right_panel">
       <header><h2 class="header_title">Select Algorithm</h2></header>
 
@@ -181,53 +181,7 @@
           </div>
         </div>
 
-        <h3 id="jump_point_header"><a href="#">Jump Point Search</a></h3>
-        <div id="jump_point_section" class="finder_section">
-          <header class="option_header">
-            <h3>Heuristic</h3>
-          </header>
-          <div id="jump_point_heuristic" class="sub_options">
-            <input type="radio" name="jump_point_heuristic" value="manhattan" checked />
-            <label class="option_label">Manhattan</label> <br>
-            <input type="radio" name="jump_point_heuristic" value="euclidean"/>
-            <label class="option_label">Euclidean</label> <br>
-            <input type="radio" name="jump_point_heuristic" value="octile"/>
-            <label class="option_label">Octile</label> <br>
-            <input type="radio" name="jump_point_heuristic" value="chebyshev"/>
-            <label class="option_label">Chebyshev</label> <br>
-          </div>
-          <header class="option_header">
-            <h3>Options</h3>
-          </header>
-          <div class="optional sub_options">
-            <input type="checkbox" class="track_recursion" checked>
-            <label class="option_label">Visualize recursion</label> <br>
-          </div>
-        </div>
-
-	<h3 id="orth_jump_point_header"><a href="#">Orthogonal Jump Point Search</a></h3>
-        <div id="orth_jump_point_section" class="finder_section">
-          <header class="option_header">
-            <h3>Heuristic</h3>
-          </header>
-          <div id="orth_jump_point_heuristic" class="sub_options">
-            <input type="radio" name="orth_jump_point_heuristic" value="manhattan" checked />
-            <label class="option_label">Manhattan</label> <br>
-            <input type="radio" name="orth_jump_point_heuristic" value="euclidean"/>
-            <label class="option_label">Euclidean</label> <br>
-            <input type="radio" name="orth_jump_point_heuristic" value="octile"/>
-            <label class="option_label">Octile</label> <br>
-            <input type="radio" name="orth_jump_point_heuristic" value="chebyshev"/>
-            <label class="option_label">Chebyshev</label> <br>
-          </div>
-          <header class="option_header">
-            <h3>Options</h3>
-          </header>
-          <div class="optional sub_options">
-            <input type="checkbox" class="track_recursion" checked>
-            <label class="option_label">Visualize recursion</label> <br>
-          </div>
-        </div>
+        
 
       </div><!-- .accordion -->
     </div><!-- #algorithm_panel -->
