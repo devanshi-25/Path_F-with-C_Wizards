@@ -48,6 +48,20 @@ h1, h2, h3, h4, h5, h6 {
     width: 550px;
 }
 
+#detail_panel {
+    top: 200px;
+    left: 20px;
+    width: 550px;
+}
+
+#hide_detail {
+    position: absolute;
+    right: 25px;
+    top: 10px;
+    font-size: 90%;
+    cursor: pointer;
+}
+
 #hide_instructions {
     position: absolute;
     right: 25px;
