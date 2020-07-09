@@ -91,6 +91,8 @@ Currently there are 10 path-finders bundled in this library, namely:
 *  `AStarFinder` *
 *  `BestFirstFinder`
 *  `BreadthFirstFinder` *
+*  `BiDepthFirstFinder` *
+*  `DepthFirstFinder` *
 *  `DijkstraFinder` *
 *  `IDAStarFinder.js` *
 *  `JumpPointFinder` *
@@ -99,6 +101,7 @@ Currently there are 10 path-finders bundled in this library, namely:
 *  `BiBestFirstFinder`
 *  `BiBreadthFirstFinder` *
 *  `BiDijkstraFinder` *
+*  `TraceFinder` *
 
 The prefix `Bi` for the last four finders in the above list stands for the bi-directional searching strategy.
 

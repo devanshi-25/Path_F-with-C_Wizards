@@ -66,11 +66,7 @@ pathTests({
     name: 'BreadthFirst',
     finder: new PF.BreadthFirstFinder(),
     optimal: true
-}, {
-    name: 'DepthFirst',
-    finder: new PF.DepthFirstFinder(),
-    optimal: true
-}, {
+},  {
     name: 'Dijkstra',
     finder: new PF.DijkstraFinder(),
     optimal: true
@@ -94,23 +90,27 @@ pathTests({
     finder: new PF.BestFirstFinder(),
     optimal: false
 }, {
+    name: 'DepthFirst',
+    finder: new PF.DepthFirstFinder(),
+    optimal: true
+},{
+    name: 'BiDepthFirst',
+    finder: new PF.BiDepthFirstFinder(),
+    optimal: true
+},{
     name: 'BiBestFirst',
     finder: new PF.BiBestFirstFinder(),
+    optimal: false
+},  {
+    name: 'JumpPoint',
+    finder: new PF.JumpPointFinder(),
     optimal: false
 }, {
     name: 'IDAStar',
     finder: new PF.IDAStarFinder(),
     optimal: false
-}, {
-    name: 'JPFMoveDiagonallyIfAtMostOneObstacle',
-    finder: new PF.JumpPointFinder({
-      diagonalMovement: PF.DiagonalMovement.IfAtMostOneObstacle
-    }),
-    optimal: false
 },  {
-    name: 'JPFNeverMoveDiagonally',
-    finder: new PF.JumpPointFinder({
-      diagonalMovement: PF.DiagonalMovement.Never
-    }),
+    name: 'OrthogonalJumpPoint',
+    finder: new PF.OrthogonalJumpPointFinder(),
     optimal: false
-});
+}); 

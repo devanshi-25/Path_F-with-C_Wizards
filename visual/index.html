@@ -6,7 +6,7 @@
 
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./lib/themes/jquery.ui.all.css" />
-
+    
     <script type="text/javascript" src="./lib/raphael-min.js"></script>
     <script type="text/javascript" src="./lib/es5-shim.min.js"></script>
     <script type="text/javascript" src="./lib/jquery-1.7.2.min.js"></script>
@@ -26,6 +26,8 @@
     <script type="text/javascript" src="./js/controller.js"></script>
     <script type="text/javascript" src="./js/panel.js"></script>
     <script type="text/javascript" src="./js/main.js"></script>
+    
+
   </head>
   <body>
     <div id="draw_area"></div>
@@ -47,17 +49,24 @@
         <h2 class="header_title">Details of Algorithms</h2>
         <span id="hide_detail">hide</span>
       </header>
-      <a href="https://en.wikipedia.org/wiki/A*_search_algorithm">A*</a> &nbsp;
-      <a href="https://en.wikipedia.org/wiki/Iterative_deepening_A*">IDA*</a>&nbsp;
-      <a href="https://en.wikipedia.org/wiki/Breadth-first_search">Breadth-First-Search</a>&nbsp;
-      <a href="https://en.wikipedia.org/wiki/Depth-first_search">Depth-First-Search</a>&nbsp;
-      <a href="https://en.wikipedia.org/wiki/Best-first_search">Best-First-Search</a>&nbsp;
-      <a href="https://en.wikipedia.org/wiki/Dijkstra%27s_algorithm">Dijkstra</a>
+      <a href="https://en.wikipedia.org/wiki/A*_search_algorithm" target="_blank">A*</a> &nbsp;&nbsp;
+      <a href="https://en.wikipedia.org/wiki/Jump_point_search" target="_blank">Jump-Point-Search</a> &nbsp;&nbsp;
+      <a href="https://en.wikipedia.org/wiki/Iterative_deepening_A*" target="_blank">IDA*</a>&nbsp;&nbsp;
+      <a href="https://en.wikipedia.org/wiki/Breadth-first_search" target="_blank">Breadth-First-Search</a>&nbsp;&nbsp;
+      <a href="https://en.wikipedia.org/wiki/Depth-first_search" target="_blank">Depth-First-Search</a>&nbsp;&nbsp;
+      <a href="https://en.wikipedia.org/wiki/Best-first_search" target="_blank">Best-First-Search</a>&nbsp;&nbsp;
+      <a href="https://en.wikipedia.org/wiki/Dijkstra%27s_algorithm" target="_blank">Dijkstra</a>&nbsp;&nbsp;
+      <a href="https://en.wikipedia.org/wiki/Heuristic_(computer_science)" target="_blank">Heuristic functions</a> &nbsp;&nbsp;
+      <a href="https://en.wikipedia.org/wiki/Admissible_heuristic" target="_blank">Manhattan</a>&nbsp;&nbsp;
+      <a href="https://en.wikipedia.org/wiki/Euclidean_distance" target="_blank">Euclidean</a>&nbsp;&nbsp;
+      <a href="https://en.wikipedia.org/wiki/Chebyshev_distance" target="_blank">Chebyshev</a>&nbsp;&nbsp;
+      <a href="http://theory.stanford.edu/~amitp/GameProgramming/Heuristics.html" target="_blank">Octile</a>
     </div>
-
+<!-- <div class="widget-content"> -->
     <div id="algorithm_panel" class="panel right_panel">
+      
       <header><h2 class="header_title">Select Algorithm</h2></header>
-
+      
       <div class="accordion">
         <h3 id="astar_header"><a href="#">A*</a></h3>
         <div id="astar_section" class="finder_section">
@@ -145,6 +154,8 @@
           <div class="optional sub_options">
             <input type="checkbox" class="allow_diagonal" checked>
             <label class="option_label">Allow Diagonal</label> <br>
+            <input type="checkbox" class="bi-directional">
+            <label class="option_label">Bi-directional</label> <br>
             <input type="checkbox" class="dont_cross_corners">
             <label class="option_label">Don't Cross Corners</label> <br>
           </div>
@@ -193,8 +204,76 @@
             <label class="option_label">Don't Cross Corners</label> <br>
           </div>
         </div>
-
         
+        <h3 id="jump_point_header"><a href="#">Jump Point Search</a></h3>
+        <div id="jump_point_section" class="finder_section">
+          <header class="option_header">
+            <h3>Heuristic</h3>
+          </header>
+          <div id="jump_point_heuristic" class="sub_options">
+            <input type="radio" name="jump_point_heuristic" value="manhattan" checked />
+            <label class="option_label">Manhattan</label> <br>
+            <input type="radio" name="jump_point_heuristic" value="euclidean"/>
+            <label class="option_label">Euclidean</label> <br>
+            <input type="radio" name="jump_point_heuristic" value="chebyshev"/>
+            <label class="option_label">Chebyshev</label> <br>
+          </div>
+          <header class="option_header">
+            <h3>Options</h3>
+          </header>
+          <div class="optional sub_options">
+            <input type="checkbox" class="track_recursion" checked>
+            <label class="option_label">Visualize recursion</label> <br>
+          </div>
+        </div>
+
+		<h3 id="orth_jump_point_header"><a href="#">Orthogonal Jump Point Search</a></h3>
+        <div id="orth_jump_point_section" class="finder_section">
+          <header class="option_header">
+            <h3>Heuristic</h3>
+          </header>
+          <div id="orth_jump_point_heuristic" class="sub_options">
+            <input type="radio" name="orth_jump_point_heuristic" value="manhattan" checked />
+            <label class="option_label">Manhattan</label> <br>
+            <input type="radio" name="orth_jump_point_heuristic" value="euclidean"/>
+            <label class="option_label">Euclidean</label> <br>
+            <input type="radio" name="orth_jump_point_heuristic" value="chebyshev"/>
+            <label class="option_label">Chebyshev</label> <br>
+          </div>
+          <header class="option_header">
+            <h3>Options</h3>
+          </header>
+          <div class="optional sub_options">
+            <input type="checkbox" class="track_recursion" checked>
+            <label class="option_label">Visualize recursion</label> <br>
+          </div>
+        </div>
+
+        <h3 id="trace_header"><a href="#">Trace</a></h3>
+        <div id="trace_section" class="finder_section">
+          <header class="option_header">
+            <h3>Heuristic</h3>
+          </header>
+          <div id="trace_heuristic" class="sub_options">
+            <input type="radio" name="trace_heuristic" value="manhattan" checked />
+            <label class="option_label">Manhattan</label> <br>
+            <input type="radio" name="trace_heuristic" value="euclidean"/>
+            <label class="option_label">Euclidean</label> <br>
+            <input type="radio" name="trace_heuristic" value="octile"/>
+            <label class="option_label">Octile</label> <br>
+            <input type="radio" name="trace_heuristic" value="chebyshev"/>
+            <label class="option_label">Chebyshev</label> <br>
+          </div>
+          <header class="option_header">
+            <h3>Options</h3>
+          </header>
+          <div class="optional sub_options">
+            <input type="checkbox" class="allow_diagonal" checked>
+            <label class="option_label">Allow Diagonal</label> <br>
+            <input type="checkbox" class="dont_cross_corners">
+            <label class="option_label">Don't Cross Corners</label> <br>
+          </div>
+        </div>
 
       </div><!-- .accordion -->
     </div><!-- #algorithm_panel -->
@@ -208,7 +287,7 @@
     <div id="stats"></div>
 
     <footer>
-      Project Hosted on <a href="http://github.com/qiao/PathFinding.js">Github</a>
+      Project Hosted on <a href="https://github.com/devanshi-25/Path_F-with-C_Wizards" target="_blank">Github</a>
     </footer>
 
   </body>
