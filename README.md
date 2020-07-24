@@ -1,4 +1,8 @@
 PathFinding.js
+
+For working check out this presntation : https://docs.google.com/presentation/d/14wNppPp7pArp_2BHgHmzjwP44wj8OmsR2wPQaY4osaQ/edit?usp=sharing
+
+
 ==============
 #### A comprehensive path-finding library in javascript. ####
 
