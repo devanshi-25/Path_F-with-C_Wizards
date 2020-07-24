@@ -24,17 +24,17 @@ h1, h2, h3, h4, h5, h6 {
 
 .panel {
     position: fixed;
-    padding: 20px;
-    background-color: rgb(0,128,128,0.9);
+    padding: 15px;
+    background-color: rgba(3, 9, 15, 0.75);
     color: #fff;
     border-radius: 8px;
-    box-shadow: 5px 5px 10px rgb(0,255,0);
+    box-shadow: 5px 5px 10px rgb(0, 247, 255);
     cursor: default;
 }
 
 .right_panel {
     width: 250px;
-    right: 20px;
+    right: 10px;
 }
 
 #algorithm_panel {
@@ -43,15 +43,15 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #instructions_panel {
-    top: 20px;
+    top: 10px;
     left: 20px;
-    width: 550px;
+    width: 450px;
 }
 
 #detail_panel {
     top: 200px;
     left: 20px;
-    width: 550px;
+    width: 250px;
 }
 
 #hide_detail {
@@ -127,7 +127,7 @@ a {
 }
 
 footer {
-    color: maroon;
+    color: rgb(247, 251, 0);
     font-size: 70%;
     text-align: center;
     position: fixed;
@@ -135,13 +135,13 @@ footer {
     bottom: 10px;
     left: 50%;
     margin-left: -100px;
-    background: rgba(255,255,255, 0.5);
+    background: rgba(255, 255, 255, 0.205);
     padding: 5px;
-    border-radius: 5px;
+    border-radius: 100px;
 }
 
 .black {
-    color: #000000;
+    color: #090cc8;
 }
 
 .yellow {

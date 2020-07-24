@@ -37,30 +37,33 @@
         <h2 class="header_title">Instructions</h2>
         <span id="hide_instructions">hide</span>
       </header>
-      Click within the <span class="black">black</span> grid and drag your mouse to draw obstacles. <br>
+      Click within the <span class="black">blue</span> grid and drag your mouse to draw obstacles. <br>
       Drag the <span class="yellow">yellow</span> node to set the start position. <br>
-      Drag the <span class="blue">blue</span> node to set the end position. <br>
+      Drag the <span class="blue">cyan</span> node to set the end position. <br>
       Choose an algorithm from the right-hand panel. <br>
+      Click on the speak button and speak the code for chose algorithm. <br>
       Click Start Search in the lower-right corner to start the animation.
     </div>
     
     <div id="detail_panel" class="panel">
       <header>
-        <h2 class="header_title">Details of Algorithms</h2>
-        <span id="hide_detail">hide</span>
+        <h2 class="header_title">Algorithms Details</h2>
       </header>
-      <a href="https://en.wikipedia.org/wiki/A*_search_algorithm" target="_blank">A*</a> &nbsp;&nbsp;
-      <a href="https://en.wikipedia.org/wiki/Jump_point_search" target="_blank">Jump-Point-Search</a> &nbsp;&nbsp;
-      <a href="https://en.wikipedia.org/wiki/Iterative_deepening_A*" target="_blank">IDA*</a>&nbsp;&nbsp;
-      <a href="https://en.wikipedia.org/wiki/Breadth-first_search" target="_blank">Breadth-First-Search</a>&nbsp;&nbsp;
-      <a href="https://en.wikipedia.org/wiki/Depth-first_search" target="_blank">Depth-First-Search</a>&nbsp;&nbsp;
-      <a href="https://en.wikipedia.org/wiki/Best-first_search" target="_blank">Best-First-Search</a>&nbsp;&nbsp;
-      <a href="https://en.wikipedia.org/wiki/Dijkstra%27s_algorithm" target="_blank">Dijkstra</a>&nbsp;&nbsp;
-      <a href="https://en.wikipedia.org/wiki/Heuristic_(computer_science)" target="_blank">Heuristic functions</a> &nbsp;&nbsp;
-      <a href="https://en.wikipedia.org/wiki/Admissible_heuristic" target="_blank">Manhattan</a>&nbsp;&nbsp;
-      <a href="https://en.wikipedia.org/wiki/Euclidean_distance" target="_blank">Euclidean</a>&nbsp;&nbsp;
-      <a href="https://en.wikipedia.org/wiki/Chebyshev_distance" target="_blank">Chebyshev</a>&nbsp;&nbsp;
-      <a href="http://theory.stanford.edu/~amitp/GameProgramming/Heuristics.html" target="_blank">Octile</a>
+      <span class="yellow">Code : hello 1 --- </span> <a href="https://en.wikipedia.org/wiki/A*_search_algorithm" target="_blank" style="color:whitesmoke">A*</a> &nbsp;&nbsp;<br>
+      <span class="yellow">Code : hello 2 --- </span> <a href="https://en.wikipedia.org/wiki/Jump_point_search" target="_blank" style="color:whitesmoke">Jump-Point-Search</a> &nbsp;&nbsp;<br>
+      <span class="yellow">Code : hello 6 --- </span> <a href="https://en.wikipedia.org/wiki/Iterative_deepening_A*" target="_blank" style="color:whitesmoke">IDA*</a>&nbsp;&nbsp;<br>
+      <span class="yellow">Code : hello --- </span> <a href="https://en.wikipedia.org/wiki/Breadth-first_search" target="_blank" style="color:whitesmoke">Breadth-First-Search</a>&nbsp;&nbsp;<br>
+      <span class="yellow">Code : hello 3 --- </span> <a href="https://en.wikipedia.org/wiki/Depth-first_search" target="_blank" style="color:whitesmoke">Depth-First-Search</a>&nbsp;&nbsp;<br>
+      <span class="yellow">Code : hello 4 --- </span> <a href="https://en.wikipedia.org/wiki/Best-first_search" target="_blank" style="color:whitesmoke">Best-First-Search</a>&nbsp;&nbsp;<br>
+      <span class="yellow">Code : hello 7 --- </span> <a href="https://en.wikipedia.org/wiki/Dijkstra%27s_algorithm" target="_blank" style="color:whitesmoke">Dijkstra</a>&nbsp;&nbsp;<br>
+      <span class="yellow">Code : hello 5 --- </span> <a href="https://github.com/Yonaba/Jumper/issues/20" target="_blank" style="color:whitesmoke">O-J-P-Search</a> &nbsp;&nbsp;<br>
+      <span class="yellow">Code : hello 9 --- </span> <a href="https://github.com/Yonaba/Jumper/issues/26" target="_blank" style="color:whitesmoke">Trace-Search</a>&nbsp;&nbsp;<br>
+      <a href="https://en.wikipedia.org/wiki/Heuristic_(computer_science)" target="_blank" style="color:whitesmoke">Heuristic functions</a> &nbsp;&nbsp;<br>
+      <a href="https://en.wikipedia.org/wiki/Admissible_heuristic" target="_blank" style="color:whitesmoke">Manhattan</a>&nbsp;&nbsp;<br>
+      <a href="https://en.wikipedia.org/wiki/Euclidean_distance" target="_blank" style="color:whitesmoke">Euclidean</a>&nbsp;&nbsp;<br>
+      <a href="https://en.wikipedia.org/wiki/Chebyshev_distance" target="_blank" style="color:whitesmoke">Chebyshev</a>&nbsp;&nbsp;<br>
+      <a href="http://theory.stanford.edu/~amitp/GameProgramming/Heuristics.html" target="_blank" style="color:whitesmoke">Octile</a><br>
+
     </div>
 <!-- <div class="widget-content"> -->
     <div id="algorithm_panel" class="panel right_panel">
@@ -286,7 +289,11 @@
 
     <div id="stats"></div>
 
+  
+
     <footer>
+      <label for="Speech Recognition">Click Here</label>
+      <input type="text" name="" id="speechToText" placeholder="Speak Something" onclick="record()"><br>
       Project Hosted on <a href="https://github.com/devanshi-25/Path_F-with-C_Wizards" target="_blank">Github</a>
     </footer>
 
