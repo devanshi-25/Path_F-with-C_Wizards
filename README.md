@@ -1,7 +1,7 @@
 PathFinding.js
 
 >>> How to operate :
-1. Click on speak something and speak the code for chosen algorithm.
+1. Click on speak something and speak the code for chosen algorithm.( Every time you select an algo, you need to click and speak)
 2. Select the heusteric and options from right hand panel.
 3. Click on Start Search in the lower right corner to start the animation.
 
